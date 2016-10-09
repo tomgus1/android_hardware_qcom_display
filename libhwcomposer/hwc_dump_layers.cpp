@@ -357,7 +357,7 @@ void HwcDebug::getHalPixelFormatStr(int format, char pixFormatStr[], size_t arra
             strlcpy(pixFormatStr, "YCbCr_420_SP_VENUS", arraySize);
             break;
         case HAL_PIXEL_FORMAT_YCrCb_420_SP_VENUS:
-            strlcpy(pixFormatStr, "YCrCb_420_SP_VENUS", sizeof(pixFormatStr));
+            strlcpy(pixFormatStr, "YCrCb_420_SP_VENUS", arraySize);
             break;
         default:
             snprintf(pixFormatStr, arraySize, "Unknown0x%X", format);
